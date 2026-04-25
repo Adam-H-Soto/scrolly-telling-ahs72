@@ -1,0 +1,31 @@
+.wrapper {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: var(--space-1x) 0;
+}
+
+.lang {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  padding: var(--space-0_5x) var(--space-1x);
+  border-bottom: 1px solid var(--rule);
+  background: var(--cyan-08);
+}
+
+.pre {
+  margin: 0;
+  padding: var(--space-1x);
+  overflow-x: auto;
+}
+
+.pre code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}

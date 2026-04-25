@@ -1,28 +1,80 @@
-# Wired — Specifications
+# Wired — The AI Integration Story
 
-This directory contains the full specification for **Wired — The AI Integration Story**, a cinematic scrollytelling website built on top of the `scrollytelling_spec_driven` starter kit.
+> "The future of software isn't written. It's connected."
 
-## How to read these specs
+A cinematic scrollytelling website about the problem of systems integration in modern software, and how AI is fundamentally changing how it gets solved.
 
-Read them in order. Each file is small and focused. Specs marked **"inherited"** defer to the starter kit for the technical foundation and only document what is new or different for this project.
+**[→ View the live site](https://ashetheloyal.github.io/wired-ai-integration/)**
 
-| # | Spec | Purpose |
-|---|---|---|
-| 00 | [overview.md](./00-overview.md) | Site name, narrative arc, 5 pages, aesthetic direction, success criteria |
-| 01 | [architecture.md](./01-architecture.md) | Additions to the starter kit: new components, directory layout, what must not change |
-| 02 | [content-model.md](./02-content-model.md) | All five pages: frontmatter, slide-by-slide structure, body sections |
-| 03 | [motion-system.md](./03-motion-system.md) | Cinematic motion tokens, cold open reveal, stat counter, stagger values |
-| 04 | [layouts.md](./04-layouts.md) | Header scroll behavior, footer design, per-page layout notes |
-| 05 | [design-system.md](./05-design-system.md) | Dark navy palette, Playfair Display + Inter + JetBrains Mono, full token set |
-| 06 | [visualizations.md](./06-visualizations.md) | IntegrationDiagram, TimelineStat, FlowChart — source format, parsing, render behavior |
-| 07 | [testing.md](./07-testing.md) | Unit tests for all three parsers + token contrast; E2E golden paths per page |
-| 08 | [deployment.md](./08-deployment.md) | Repo name, Pages config, README template, submission checklist |
-| 09 | [roadmap.md](./09-roadmap.md) | 7 milestones, each with an exit check — one session each |
+---
 
-## Starting point
+## Screenshot
 
-Fork `scrollytelling_spec_driven`, drop these specs into `docs/specs/`, and start at **Milestone 0** in `09-roadmap.md`.
+> Replace this section with a screenshot after deploying: `docs/assets/screenshot-home.png`
 
-## Assets
+---
 
-Image assets go in `public/images/wired/`. See `05-design-system.md` § Imagery guidelines for sourcing, format, and dimension requirements.
+## Tech Stack
+
+- **Framework:** Next.js 15 App Router, static export (`output: "export"`)
+- **Animation:** framer-motion — scroll-linked sticky slides + viewport reveals
+- **Content:** Markdown + YAML frontmatter, Zod validation, next-mdx-remote/rsc
+- **Styling:** CSS Modules + CSS custom properties (dark navy / electric cyan palette)
+- **Deploy:** GitHub Pages via GitHub Actions
+
+---
+
+## What I Learned
+
+Building Wired taught me how spec-driven development forces you to think clearly before you code. Every layout decision, every token name, every component API had to be decided upfront in plain English — which meant far fewer dead ends during implementation. The scrollytelling technique (sticky slides driven by `useScroll` and `scrollYProgress`) was the most technically interesting part: synchronizing framer-motion values with the browser's scroll position to create cinematic reveals that feel weighty and intentional, not snappy. The hardest part was the dual-mode motion system — making `Reveal` and visualization components work correctly both inside a presentation slide (scroll-driven) and in a standard page (viewport-driven), without any conditional hook calls.
+
+---
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+# Visit http://localhost:3000
+```
+
+```bash
+npm run build   # Static export to out/
+npm test        # Vitest unit tests (24 tests)
+npm run test:e2e  # Playwright E2E (requires npm run dev in another terminal)
+```
+
+---
+
+## Image Assets
+
+Place five `.webp` images in `public/images/wired/` (max 400KB each, dark/atmospheric):
+
+| File | Description |
+|---|---|
+| `hero-network.webp` | Glowing network map, dark background |
+| `server-room.webp` | Atmospheric server room with blue light |
+| `hands-keyboard.webp` | Developer at work, night scene |
+| `data-flow.webp` | Abstract data flow visualization |
+| `team-deploy.webp` | Team looking at dashboards |
+
+Placeholder 1×1 webp files are included. Replace them with real images before deploying. Recommended sources: [Unsplash](https://unsplash.com) — search "server room dark", "network cables blue light", "developer night".
+
+---
+
+## Specs
+
+See [`specs/`](./specs/) for the full specification suite.
+
+| Spec | Purpose |
+|---|---|
+| [00-overview](specs/00-overview.md) | Goals, narrative arc, success criteria |
+| [01-architecture](specs/01-architecture.md) | Tech stack additions and directory layout |
+| [02-content-model](specs/02-content-model.md) | All five pages: frontmatter, slide structure, body content |
+| [03-motion-system](specs/03-motion-system.md) | Cinematic motion tokens and Wired-specific patterns |
+| [04-layouts](specs/04-layouts.md) | Header, footer, per-page layout notes |
+| [05-design-system](specs/05-design-system.md) | Dark palette, typography, tokens |
+| [06-visualizations](specs/06-visualizations.md) | Three custom visualization components |
+| [07-testing](specs/07-testing.md) | Unit + E2E test matrix |
+| [08-deployment](specs/08-deployment.md) | GitHub Pages config + README requirements |
+| [09-roadmap](specs/09-roadmap.md) | Milestones and delivery order |

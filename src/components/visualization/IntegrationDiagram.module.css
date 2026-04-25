@@ -1,0 +1,98 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3x);
+  min-height: 360px;
+  width: 100%;
+  align-items: start;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.columnLabel {
+  font-family: var(--font-mono);
+  font-size: var(--slide-eyebrow);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-1x);
+}
+
+.node {
+  width: 100%;
+  padding: var(--space-1x);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.nodeRole {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.nodeLabel {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.pain {
+  border-color: var(--accent-warm);
+  background: rgba(255, 107, 53, 0.08);
+}
+
+.pain .nodeLabel {
+  color: var(--accent-warm);
+}
+
+.win {
+  border-color: var(--accent);
+  background: var(--cyan-08);
+  box-shadow: var(--glow-cyan);
+}
+
+.win .nodeLabel {
+  color: var(--accent);
+}
+
+.arrow {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  padding: 4px 0;
+}
+
+.error {
+  padding: var(--space-1x);
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid var(--accent-warm);
+  border-radius: 6px;
+  color: var(--accent-warm);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .root {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}

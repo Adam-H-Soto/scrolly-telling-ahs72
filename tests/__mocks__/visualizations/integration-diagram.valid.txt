@@ -1,0 +1,17 @@
+before:
+  - label: Order Management System
+    role: source
+  - label: Custom ETL Script (340 lines)
+    role: connector
+    highlight: pain
+  - label: 3PL Logistics API
+    role: target
+
+after:
+  - label: Order Management System
+    role: source
+  - label: AI-Generated Connector (18 lines config)
+    role: connector
+    highlight: win
+  - label: 3PL Logistics API
+    role: target

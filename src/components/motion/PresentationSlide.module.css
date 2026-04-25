@@ -1,0 +1,97 @@
+.container {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navy-deep);
+}
+
+/* Full-bleed background slides */
+.bg {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Split slides */
+.split,
+.split-reverse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.bgLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 15, 30, 0.4) 0%,
+    rgba(10, 15, 30, 0.65) 100%
+  );
+}
+
+.splitImage {
+  position: relative;
+  height: 100vh;
+}
+
+.splitImageReverse {
+  order: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-4x) var(--space-3x);
+  max-width: var(--slide-measure);
+  width: 100%;
+}
+
+.contentSplit,
+.contentSplitReverse {
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-4x);
+}
+
+/* Mobile — disable split/sticky */
+@media (max-width: 767px) {
+  .sticky {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .split,
+  .split-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .splitImage {
+    height: 40vh;
+  }
+
+  .splitImageReverse {
+    order: 0;
+  }
+
+  .content {
+    padding: var(--space-2x) var(--space-1x);
+  }
+}

@@ -1,0 +1,12 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.light {
+  color: var(--text);
+}
+
+.dark {
+  color: var(--navy-deep);
+}

@@ -1,0 +1,99 @@
+.root {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  min-height: 400px;
+  padding: var(--space-1x) 0;
+  counter-reset: step;
+}
+
+.step {
+  position: relative;
+  padding-left: var(--space-3x);
+}
+
+/* Connector line between steps */
+.step::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: -1px;
+  width: 2px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+.step:last-child::before {
+  display: none;
+}
+
+/* Circle dot on the timeline */
+.step::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: var(--glow-cyan);
+}
+
+.stepCard {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: var(--space-1x) var(--space-1x) var(--space-1x) var(--space-1x);
+  margin-bottom: var(--space-1x);
+}
+
+.actor {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.actorAI {
+  color: var(--accent);
+  background: var(--cyan-08);
+  border: 1px solid var(--cyan-16);
+}
+
+.actorHuman {
+  color: var(--text-muted);
+  background: var(--cream-08);
+  border: 1px solid rgba(240, 235, 224, 0.1);
+}
+
+.stepText {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.stepNote {
+  font-size: var(--text-small);
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.error {
+  padding: var(--space-1x);
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid var(--accent-warm);
+  border-radius: 6px;
+  color: var(--accent-warm);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}

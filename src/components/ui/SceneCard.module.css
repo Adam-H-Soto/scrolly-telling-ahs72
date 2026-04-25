@@ -1,0 +1,40 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: var(--space-2x);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent), transparent);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--slide-eyebrow);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-0_5x);
+}
+
+.title {
+  font-size: var(--text-h3);
+  font-weight: var(--wght-h3);
+  color: var(--text);
+  margin-bottom: var(--space-1x);
+}
+
+.body {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,6 @@
+.rule {
+  border: none;
+  border-top: 1px solid var(--accent);
+  opacity: 0.4;
+  margin: var(--space-3x) 0;
+}

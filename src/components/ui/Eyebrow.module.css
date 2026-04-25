@@ -1,0 +1,8 @@
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--slide-eyebrow);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-0_5x);
+}

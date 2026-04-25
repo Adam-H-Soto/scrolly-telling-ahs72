@@ -1,0 +1,8 @@
+before:
+  - label: Order Management System
+    role: source
+  - label: Custom ETL Script
+    role: connector
+    highlight: pain
+  - label: 3PL Logistics API
+    role: target

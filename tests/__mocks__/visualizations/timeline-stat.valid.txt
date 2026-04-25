@@ -1,0 +1,4 @@
+value: 72
+unit: "%"
+label: of integration projects run over budget
+note: "Source: Gartner, 2023"

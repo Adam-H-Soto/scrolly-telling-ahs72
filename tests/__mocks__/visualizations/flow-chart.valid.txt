@@ -1,0 +1,16 @@
+- step: Define intent in plain language
+  actor: Developer
+- step: Read source + target API docs
+  actor: AI Agent
+  note: "Automatic — no manual API parsing"
+- step: Propose field mapping
+  actor: AI Agent
+- step: Review and correct
+  actor: Developer
+  note: "2 fields adjusted"
+- step: Generate connector code
+  actor: AI Agent
+- step: Run tests
+  actor: CI System
+- step: Deploy
+  actor: Developer

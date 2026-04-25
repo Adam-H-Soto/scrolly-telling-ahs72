@@ -1,0 +1,3 @@
+value: "not-a-number"
+unit: "%"
+label: of integration projects run over budget

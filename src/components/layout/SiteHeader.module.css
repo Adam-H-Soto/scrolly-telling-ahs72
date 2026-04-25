@@ -1,0 +1,139 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky);
+  padding: var(--space-1x) 0;
+  background-color: transparent;
+  transition: background-color var(--dur-base) var(--ease-brand),
+              backdrop-filter var(--dur-base) var(--ease-brand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header {
+    transition: none;
+  }
+}
+
+.scrolled {
+  background-color: rgba(10, 15, 30, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-2x);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2x);
+}
+
+.logoLink {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2x);
+  margin-left: auto;
+}
+
+.navLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color var(--dur-quick) ease;
+  position: relative;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform var(--dur-quick) var(--ease-brand);
+}
+
+.navLink:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navLink:hover::after {
+  transform: scaleX(1);
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: var(--space-0_5x);
+  margin-left: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+}
+
+/* Full-screen overlay nav */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  background: var(--navy-deep);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayClose {
+  position: absolute;
+  top: var(--space-2x);
+  right: var(--space-2x);
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.overlayNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2x);
+}
+
+.overlayLink {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  color: var(--text);
+  text-decoration: none;
+  transition: color var(--dur-quick) ease;
+}
+
+.overlayLink:hover {
+  color: var(--accent);
+}
