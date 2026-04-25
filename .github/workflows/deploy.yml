@@ -39,7 +39,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /wired-ai-integration
+          NEXT_PUBLIC_BASE_PATH: /scrolly-telling-ahs72
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
