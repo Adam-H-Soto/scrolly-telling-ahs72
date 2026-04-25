@@ -129,4 +129,4 @@ note: "Source: Gartner, 2023"
 
 # Sounds good in theory. Here's what it looks like when a real team tries it.
 
-<ContextualLink href="/in-practice">See it in practice →</ContextualLink>
+<ContextualLink href="/in-practice">See it in practice</ContextualLink>

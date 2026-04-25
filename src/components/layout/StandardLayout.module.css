@@ -40,7 +40,7 @@
 .heroSummary {
   font-size: var(--slide-body);
   color: var(--text-muted);
-  max-width: 55ch;
+  max-width: 70ch;
   line-height: 1.6;
 }
 

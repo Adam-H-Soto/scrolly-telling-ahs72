@@ -127,4 +127,4 @@ One developer. Ten integrations. Six weeks. Previously that was a team of four f
 
 The math changes what's possible. Teams that were previously too small to maintain their integration layer can now keep up. Products that were previously too complex to connect can now be connected. The bottleneck moves — from "can we build it" to "what should we build."
 
-<ContextualLink href="/get-started">Where do you go from here? →</ContextualLink>
+<ContextualLink href="/get-started">Where do you go from here?</ContextualLink>

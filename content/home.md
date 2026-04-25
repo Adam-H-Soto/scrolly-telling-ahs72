@@ -94,4 +94,4 @@ order: 0
 
 <Eyebrow>Continue</Eyebrow>
 
-<ContextualLink href="/the-problem">Start the story →</ContextualLink>
+<ContextualLink href="/the-problem">Start the story</ContextualLink>

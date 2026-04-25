@@ -104,4 +104,4 @@ A single API update in one service can cascade through dozens of dependent integ
 
 # What if the connector could figure out what you meant — not just what you wrote?
 
-<ContextualLink href="/how-ai-helps">How AI changes this →</ContextualLink>
+<ContextualLink href="/how-ai-helps">How AI changes this</ContextualLink>
