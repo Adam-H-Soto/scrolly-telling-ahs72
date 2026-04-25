@@ -83,6 +83,7 @@ const components = {
   ContextualLink,
   SceneCard,
   StatGrid,
+  Eyebrow,
 };
 
 interface MarkdownRendererProps {
