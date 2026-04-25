@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Integration Problem"
 layout: "presentation"
 heroImage: "/images/wired/server-room.webp"
@@ -11,13 +11,13 @@ order: 1
 
 ![bg](/images/wired/server-room.webp)
 
-> eyebrow: The Integration Problem
+<Eyebrow>The Integration Problem</Eyebrow>
 
 # You've built the app. Now make it talk to the other 12 apps.
 
 ---
 
-> eyebrow: The Gap
+<Eyebrow>The Gap</Eyebrow>
 
 ## What integration actually means
 
@@ -27,7 +27,7 @@ Integration is data format mismatches. It's authentication protocols that don't 
 
 ![split](/images/wired/hands-keyboard.webp)
 
-> eyebrow: The Human Cost
+<Eyebrow>The Human Cost</Eyebrow>
 
 ## Developers have been writing the same script for 30 years.
 
@@ -37,7 +37,7 @@ Integration is data format mismatches. It's authentication protocols that don't 
 
 ---
 
-> eyebrow: The Business Cost
+<Eyebrow>The Business Cost</Eyebrow>
 
 ## The numbers are staggering.
 
@@ -52,7 +52,7 @@ Integration is data format mismatches. It's authentication protocols that don't 
 
 ---
 
-> eyebrow: Why It's Hard
+<Eyebrow>Why It's Hard</Eyebrow>
 
 ## Three root causes that never went away.
 
@@ -69,7 +69,7 @@ The moment you finish a connector, one system releases a new API version and eve
 
 ![split-reverse](/images/wired/data-flow.webp)
 
-> eyebrow: The Brittleness Problem
+<Eyebrow>The Brittleness Problem</Eyebrow>
 
 ## When one system changes, everything downstream breaks.
 
@@ -77,7 +77,7 @@ A single API update in one service can cascade through dozens of dependent integ
 
 ---
 
-> eyebrow: What We Tried
+<Eyebrow>What We Tried</Eyebrow>
 
 ## Every solution helped. None solved it.
 
@@ -100,7 +100,7 @@ A single API update in one service can cascade through dozens of dependent integ
 
 ![bg](/images/wired/data-flow.webp)
 
-> eyebrow: The Question
+<Eyebrow>The Question</Eyebrow>
 
 # What if the connector could figure out what you meant — not just what you wrote?
 

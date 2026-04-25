@@ -1,4 +1,4 @@
----
+﻿---
 title: "How AI Changes Everything"
 layout: "presentation"
 heroImage: "/images/wired/data-flow.webp"
@@ -11,7 +11,7 @@ order: 2
 
 ![bg](/images/wired/data-flow.webp)
 
-> eyebrow: The Reframe
+<Eyebrow>The Reframe</Eyebrow>
 
 # Integration has always been a translation problem.
 
@@ -19,7 +19,7 @@ And AI is the first technology that can actually translate.
 
 ---
 
-> eyebrow: What AI Brings
+<Eyebrow>What AI Brings</Eyebrow>
 
 ## Three capabilities that change everything.
 
@@ -35,7 +35,7 @@ And AI is the first technology that can actually translate.
 
 ---
 
-> eyebrow: Before & After
+<Eyebrow>Before & After</Eyebrow>
 
 ## The before and after of an integration stack.
 
@@ -61,7 +61,7 @@ after:
 
 ---
 
-> eyebrow: How It Works
+<Eyebrow>How It Works</Eyebrow>
 
 ## Five steps. Human stays in the loop the whole time.
 
@@ -75,7 +75,7 @@ after:
 
 ![split](/images/wired/team-deploy.webp)
 
-> eyebrow: The Models Behind It
+<Eyebrow>The Models Behind It</Eyebrow>
 
 ## These models understand semantics, not just syntax.
 
@@ -85,7 +85,7 @@ Models like Claude, GPT-4, and Gemini can read API documentation the same way a 
 
 ---
 
-> eyebrow: Real Tools Today
+<Eyebrow>Real Tools Today</Eyebrow>
 
 ## This isn't theoretical. Tools exist today.
 
@@ -102,7 +102,7 @@ Models like Claude, GPT-4, and Gemini can read API documentation the same way a 
 
 ![bg](/images/wired/server-room.webp)
 
-> eyebrow: The Limits
+<Eyebrow>The Limits</Eyebrow>
 
 ## AI-assisted integration is not magic.
 
@@ -112,20 +112,20 @@ The engineers who thrive in this shift are the ones who learn to direct AI effec
 
 ---
 
-> eyebrow: The Net Effect
+<Eyebrow>The Net Effect</Eyebrow>
 
 ## The numbers, before and after.
 
 ```timeline-stat
 value: 72
 unit: "%"
-label: of integration projects run over budget without AI assistance
-note: Source: Gartner Research, 2023
+label: of integration projects run over budget
+note: "Source: Gartner, 2023"
 ```
 
 ---
 
-> eyebrow: Next
+<Eyebrow>Next</Eyebrow>
 
 # Sounds good in theory. Here's what it looks like when a real team tries it.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Wired World"
 layout: "presentation"
 heroImage: "/images/wired/hero-network.webp"
@@ -12,13 +12,13 @@ order: 0
 
 ![bg](/images/wired/hero-network.webp)
 
-> eyebrow: Act I — The Problem
+<Eyebrow>Act I — The Problem</Eyebrow>
 
 # Every app is an island.
 
 ---
 
-> eyebrow: The Scale
+<Eyebrow>The Scale</Eyebrow>
 
 ## The numbers are staggering.
 
@@ -35,7 +35,7 @@ order: 0
 
 ![split](/images/wired/server-room.webp)
 
-> eyebrow: The Pain
+<Eyebrow>The Pain</Eyebrow>
 
 ## Getting systems to talk is slow, expensive, and breaks constantly.
 
@@ -45,7 +45,7 @@ order: 0
 
 ---
 
-> eyebrow: The Old Way
+<Eyebrow>The Old Way</Eyebrow>
 
 ## Every generation tried to solve it.
 
@@ -68,7 +68,7 @@ order: 0
 
 ![bg](/images/wired/server-room.webp)
 
-> eyebrow: The Shift
+<Eyebrow>The Shift</Eyebrow>
 
 # Then AI learned to read the docs.
 
@@ -78,7 +78,7 @@ order: 0
 
 ![split-reverse](/images/wired/hands-keyboard.webp)
 
-> eyebrow: What's Inside
+<Eyebrow>What's Inside</Eyebrow>
 
 ## Five chapters. One story.
 
@@ -92,6 +92,6 @@ order: 0
 
 ---
 
-> eyebrow: Continue
+<Eyebrow>Continue</Eyebrow>
 
 <ContextualLink href="/the-problem">Start the story →</ContextualLink>
