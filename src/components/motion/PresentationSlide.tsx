@@ -51,10 +51,11 @@ export function PresentationSlide({
 
           {(kind === "split" || kind === "split-reverse") && imageUrl && (
             <div className={`${styles.splitImage} ${kind === "split-reverse" ? styles.splitImageReverse : ""}`}>
-              <img
+              <Image
                 src={imageUrl}
                 alt=""
-                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                fill
+                style={{ objectFit: "cover" }}
               />
             </div>
           )}

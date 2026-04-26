@@ -26,6 +26,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
+  padding: 0;
 }
 
 .bgLayer {
@@ -47,6 +48,7 @@
 .splitImage {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 .splitImageReverse {
