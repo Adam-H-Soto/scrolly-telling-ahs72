@@ -44,7 +44,7 @@
   --text-small: calc(var(--text-base) / 1.618);
 
   /* Presentation slide typography */
-  --slide-display: clamp(2rem, 4vw, 3.8rem);
+  --slide-display: clamp(1.8rem, 3.5vw, 3.2rem);
   --slide-eyebrow:  clamp(0.75rem, 1vw, 0.9rem);
   --slide-body:     clamp(1.1rem, 1.4vw, 1.35rem);
   --slide-line:     1.4;

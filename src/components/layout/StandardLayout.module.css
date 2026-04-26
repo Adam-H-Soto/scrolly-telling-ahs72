@@ -6,10 +6,10 @@
 
 .hero {
   position: relative;
-  height: 60vh;
-  min-height: 400px;
+  min-height: 60vh;
   display: flex;
   align-items: flex-end;
+  padding: var(--space-5x) var(--space-2x) var(--space-3x);
 }
 
 .heroOverlay {
@@ -22,11 +22,11 @@
   );
 }
 
-.heroText {
+.heroContent {
   position: relative;
   z-index: 1;
-  padding: var(--space-4x) var(--space-3x);
-  max-width: 800px;
+  max-width: 80ch;
+  width: 100%;
 }
 
 .heroTitle {
@@ -90,8 +90,8 @@
 }
 
 @media (max-width: 767px) {
-  .heroText {
-    padding: var(--space-2x) var(--space-1x);
+  .hero {
+    padding: var(--space-2x) var(--space-1x) var(--space-2x);
   }
 
   .body {

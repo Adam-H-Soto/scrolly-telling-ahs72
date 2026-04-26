@@ -24,14 +24,14 @@ export function StandardLayout({
           <div className={styles.hero}>
             <Image
               src={heroImage}
-              alt={title}
+              alt=""
               fill
               style={{ objectFit: "cover" }}
               priority
               sizes="100vw"
             />
             <div className={styles.heroOverlay} />
-            <div className={styles.heroText}>
+            <div className={styles.heroContent}>
               <h1 className={styles.heroTitle}>{title}</h1>
               {summary && <p className={styles.heroSummary}>{summary}</p>}
             </div>
