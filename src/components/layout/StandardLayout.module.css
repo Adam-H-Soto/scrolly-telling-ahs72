@@ -6,10 +6,12 @@
 
 .hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
-  align-items: flex-end;
-  padding: var(--space-5x) var(--space-2x) var(--space-3x);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-3x) var(--space-2x);
 }
 
 .heroOverlay {
@@ -25,7 +27,7 @@
 .heroContent {
   position: relative;
   z-index: 1;
-  max-width: 80ch;
+  max-width: 70ch;
   width: 100%;
 }
 

@@ -21,11 +21,11 @@ export function parseSlideDirective(markdown: string): ParsedSlide {
     const kind = bgMatch[1] as "bg" | "split" | "split-reverse";
     const imageUrl = bgMatch[2];
     const content = markdown.slice(bgMatch[0].length).trim();
-    const heightVh = kind === "bg" ? 200 : 170;
+    const heightVh = kind === "bg" ? 150 : 130;
     return { kind, imageUrl, content, heightVh };
   }
 
-  return { kind: "plain", content: markdown, heightVh: 170 };
+  return { kind: "plain", content: markdown, heightVh: 130 };
 }
 
 export function parseAllSlides(body: string): ParsedSlide[] {
