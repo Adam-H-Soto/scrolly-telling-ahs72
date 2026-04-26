@@ -63,6 +63,20 @@
   width: 100%;
 }
 
+.content :global(h1) {
+  font-size: clamp(1.5rem, 2.8vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.content :global(h2) {
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  line-height: 1.25;
+}
+
+.content :global(p) {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+}
+
 .contentSplit,
 .contentSplitReverse {
   max-width: none;
