@@ -1,7 +1,7 @@
 ---
 title: "AI Integration in Practice"
 layout: "standard"
-heroImage: "/images/wired/team-deploy.webp"
+heroImage: "/images/wired/team-deploy.jpg"
 summary: "A walk-through of what an AI-assisted integration workflow actually looks like — from problem statement to deployed connector."
 seo:
   title: "AI Integration in Practice | Wired"

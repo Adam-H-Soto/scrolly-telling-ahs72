@@ -1,7 +1,7 @@
 ---
 title: "Where Do You Go From Here?"
 layout: "standard"
-heroImage: "/images/wired/hands-keyboard.webp"
+heroImage: "/images/wired/hands-keyboard.jpg"
 summary: "AI-assisted integration is here. Whether you're a developer, a decision-maker, or just curious — here's how to step into this shift."
 seo:
   title: "Where Do You Go From Here? | Wired"

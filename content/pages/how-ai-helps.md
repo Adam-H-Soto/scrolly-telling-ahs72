@@ -1,7 +1,7 @@
 ﻿---
 title: "How AI Changes Everything"
 layout: "presentation"
-heroImage: "/images/wired/data-flow.webp"
+heroImage: "/images/wired/data-flow.jpg"
 summary: "AI doesn't just automate integration — it understands intent. Here's how large language models and AI agents are reshaping the middleware layer."
 seo:
   title: "How AI Changes Everything | Wired"
@@ -9,7 +9,7 @@ seo:
 order: 2
 ---
 
-![bg](/images/wired/data-flow.webp)
+![bg](/images/wired/data-flow.jpg)
 
 <Eyebrow>The Reframe</Eyebrow>
 
@@ -73,7 +73,7 @@ after:
 
 ---
 
-![split](/images/wired/team-deploy.webp)
+![split](/images/wired/team-deploy.jpg)
 
 <Eyebrow>The Models Behind It</Eyebrow>
 
@@ -100,7 +100,7 @@ Models like Claude, GPT-4, and Gemini can read API documentation the same way a 
 
 ---
 
-![bg](/images/wired/server-room.webp)
+![bg](/images/wired/server-room.jpg)
 
 <Eyebrow>The Limits</Eyebrow>
 

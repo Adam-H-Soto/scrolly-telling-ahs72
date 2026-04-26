@@ -1,16 +1,16 @@
 ﻿---
 title: "The Wired World"
 layout: "presentation"
-heroImage: "/images/wired/hero-network.webp"
+heroImage: "/images/wired/hero-network.jpg"
 summary: "Every modern business runs on software. But software doesn't talk to software — not without a fight. Discover why systems integration is the hidden cost of the digital age, and how AI is finally changing the equation."
 seo:
   title: "Wired — The AI Integration Story"
   description: "A cinematic journey through the hidden complexity of modern software integration, and how AI is streamlining it."
-  openGraphImage: "/images/wired/hero-network.webp"
+  openGraphImage: "/images/wired/hero-network.jpg"
 order: 0
 ---
 
-![bg](/images/wired/hero-network.webp)
+![bg](/images/wired/hero-network.jpg)
 
 <Eyebrow>Act I — The Problem</Eyebrow>
 
@@ -33,7 +33,7 @@ order: 0
 
 ---
 
-![split](/images/wired/server-room.webp)
+![split](/images/wired/server-room.jpg)
 
 <Eyebrow>The Pain</Eyebrow>
 
@@ -66,7 +66,7 @@ order: 0
 
 ---
 
-![bg](/images/wired/server-room.webp)
+![bg](/images/wired/server-room.jpg)
 
 <Eyebrow>The Shift</Eyebrow>
 
@@ -76,7 +76,7 @@ order: 0
 
 ---
 
-![split-reverse](/images/wired/hands-keyboard.webp)
+![split-reverse](/images/wired/hands-keyboard.jpg)
 
 <Eyebrow>What's Inside</Eyebrow>
 

@@ -1,7 +1,7 @@
 ﻿---
 title: "The Integration Problem"
 layout: "presentation"
-heroImage: "/images/wired/server-room.webp"
+heroImage: "/images/wired/server-room.jpg"
 summary: "Why does connecting two software systems still take months? A deep look at the real cost of integration — in time, money, and developer sanity."
 seo:
   title: "The Integration Problem | Wired"
@@ -9,7 +9,7 @@ seo:
 order: 1
 ---
 
-![bg](/images/wired/server-room.webp)
+![bg](/images/wired/server-room.jpg)
 
 <Eyebrow>The Integration Problem</Eyebrow>
 
@@ -25,7 +25,7 @@ Integration is data format mismatches. It's authentication protocols that don't 
 
 ---
 
-![split](/images/wired/hands-keyboard.webp)
+![split](/images/wired/hands-keyboard.jpg)
 
 <Eyebrow>The Human Cost</Eyebrow>
 
@@ -67,7 +67,7 @@ The moment you finish a connector, one system releases a new API version and eve
 
 ---
 
-![split-reverse](/images/wired/data-flow.webp)
+![split-reverse](/images/wired/data-flow.jpg)
 
 <Eyebrow>The Brittleness Problem</Eyebrow>
 
@@ -98,7 +98,7 @@ A single API update in one service can cascade through dozens of dependent integ
 
 ---
 
-![bg](/images/wired/data-flow.webp)
+![bg](/images/wired/data-flow.jpg)
 
 <Eyebrow>The Question</Eyebrow>
 
