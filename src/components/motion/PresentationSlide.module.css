@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-/* Split slides */
+/* Split slides — grid, no padding so image reaches edge */
 .split,
 .split-reverse {
   display: grid;
@@ -35,12 +35,6 @@
   z-index: 0;
 }
 
-.bgImage {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .bgOverlay {
   position: absolute;
   inset: 0;
@@ -51,11 +45,10 @@
   );
 }
 
+/* Split image panel — explicit height so height:100% on the img resolves */
 .splitImage {
   height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .splitImageReverse {

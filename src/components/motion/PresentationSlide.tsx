@@ -2,10 +2,9 @@
 
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
+import Image from "next/image";
 import { SlideContext } from "./SlideContext";
 import styles from "./PresentationSlide.module.css";
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 interface PresentationSlideProps {
   children: React.ReactNode;
@@ -28,10 +27,6 @@ export function PresentationSlide({
     offset: ["start start", "end end"],
   });
 
-  const bgStyle = imageUrl
-    ? { backgroundImage: `url("${basePath}${imageUrl}")` }
-    : undefined;
-
   return (
     <SlideContext.Provider value={{ scrollYProgress, isSlideMode: true }}>
       <div
@@ -41,24 +36,38 @@ export function PresentationSlide({
         data-slide-index={slideIndex}
       >
         <div className={`${styles.sticky} ${styles[kind] ?? ""}`}>
+
+          {/* Full-bleed background: fill works because bgLayer is position:absolute */}
           {kind === "bg" && imageUrl && (
-            <div className={`${styles.bgLayer} ${styles.bgImage}`} style={bgStyle}>
+            <div className={styles.bgLayer}>
+              <Image
+                src={imageUrl}
+                alt=""
+                fill
+                style={{ objectFit: "cover" }}
+                priority={slideIndex === 0}
+              />
               <div className={styles.bgOverlay} />
             </div>
           )}
 
+          {/* Split: explicit dimensions + CSS sizing avoids fill/grid conflicts */}
           {(kind === "split" || kind === "split-reverse") && imageUrl && (
-            <div
-              className={`${styles.splitImage} ${kind === "split-reverse" ? styles.splitImageReverse : ""}`}
-              style={bgStyle}
-            />
+            <div className={`${styles.splitImage} ${kind === "split-reverse" ? styles.splitImageReverse : ""}`}>
+              <Image
+                src={imageUrl}
+                alt=""
+                width={1200}
+                height={900}
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              />
+            </div>
           )}
 
-          <div
-            className={`${styles.content} ${kind === "split" ? styles.contentSplit : ""} ${kind === "split-reverse" ? styles.contentSplitReverse : ""}`}
-          >
+          <div className={`${styles.content} ${kind === "split" ? styles.contentSplit : ""} ${kind === "split-reverse" ? styles.contentSplitReverse : ""}`}>
             {children}
           </div>
+
         </div>
       </div>
     </SlideContext.Provider>
