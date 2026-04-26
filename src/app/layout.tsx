@@ -38,11 +38,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return (
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable} ${jetbrains.variable}`}
     >
+      <head>
+        <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+      </head>
       <body>{children}</body>
     </html>
   );
