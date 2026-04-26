@@ -2,7 +2,8 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 interface ParallaxBackgroundProps {
   src: string;
@@ -35,12 +36,10 @@ export function ParallaxBackground({
       <motion.div
         style={{ y, position: "absolute", inset: "-20% 0", zIndex: 0 }}
       >
-        <Image
-          src={src}
+        <img
+          src={`${BASE}${src}`}
           alt={alt}
-          fill
-          style={{ objectFit: "cover" }}
-          sizes="100vw"
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
         />
       </motion.div>
       {children && (

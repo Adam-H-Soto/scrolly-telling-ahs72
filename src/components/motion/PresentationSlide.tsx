@@ -2,9 +2,10 @@
 
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
-import Image from "next/image";
 import { SlideContext } from "./SlideContext";
 import styles from "./PresentationSlide.module.css";
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 interface PresentationSlideProps {
   children: React.ReactNode;
@@ -40,12 +41,10 @@ export function PresentationSlide({
           {/* Full-bleed background: fill works because bgLayer is position:absolute */}
           {kind === "bg" && imageUrl && (
             <div className={styles.bgLayer}>
-              <Image
-                src={imageUrl}
+              <img
+                src={`${BASE}${imageUrl}`}
                 alt=""
-                fill
-                style={{ objectFit: "cover" }}
-                priority={slideIndex === 0}
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
               />
               <div className={styles.bgOverlay} />
             </div>
@@ -54,11 +53,9 @@ export function PresentationSlide({
           {/* Split: explicit dimensions + CSS sizing avoids fill/grid conflicts */}
           {(kind === "split" || kind === "split-reverse") && imageUrl && (
             <div className={`${styles.splitImage} ${kind === "split-reverse" ? styles.splitImageReverse : ""}`}>
-              <Image
-                src={imageUrl}
+              <img
+                src={`${BASE}${imageUrl}`}
                 alt=""
-                width={1200}
-                height={900}
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               />
             </div>
