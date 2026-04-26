@@ -28,7 +28,7 @@ A cinematic scrollytelling website about the problem of systems integration in m
 
 ## What I Learned
 
-[Your reflection here — 3 to 5 sentences about the spec-driven process and scrollytelling technique.]
+Upon using the spec-driven process, I can see how much more efficient AI-assisted development is. I no longer have to explain myself recursively to achieve what I want to create, I just mark it in the spec files. Troubleshooting is also easier than ever, after each spec document is processed, if any error happens, I know exactly where to look first. The scrolly-telling is an interesting design for websites, after testing a few samples, I found that it works best for presenting information. Overall, the process of using spec-driven development and scrolly-telling techniques has redefined how I approach AI-assisted development and even my own creation process.
 
 ---
 
