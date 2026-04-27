@@ -79,4 +79,4 @@ Wired was built with **Next.js** (App Router, static export), **framer-motion** 
 
 The scrollytelling technique — sticky presentation slides driven by scroll progress — is a way of turning a linear argument into a cinematic experience. The goal was to make an inherently technical subject feel worth paying attention to.
 
-<ContextualLink href="/">← Back to the beginning</ContextualLink>
+<ContextualLink href="/">Back to the beginning</ContextualLink>
